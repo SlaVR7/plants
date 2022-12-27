@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: "Inika";
 }
 
@@ -8,6 +9,8 @@ a {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -18,7 +21,8 @@ header {
 .header__container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 109px;;
+    padding: 42px 109px;
+    padding-right: 73px;
 }
 
 .header__nav {
@@ -50,4 +54,12 @@ header {
 
 .header__nav-item:first-child {
     flex-grow: 1;
+}
+
+.header__nav-item:nth-child(2) {
+    margin-left: 46px;
+}
+
+.header__logo {
+    margin-right: -4px;
 }
