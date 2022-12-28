@@ -1,7 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Inika";
-    box-sizing: border-box;
 }
 
 a {
@@ -13,6 +16,14 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 header {
@@ -101,7 +112,7 @@ h1 {
     color: #717171;
 }
 
-.welcome__description-green {
+.green {
     color: green;
 }
 
@@ -130,3 +141,352 @@ h1 {
     background-color: #E06733;
     cursor: pointer;
 }
+
+/* section about */
+
+.about {
+    background-color: #FFFFFF;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.about__left {
+    flex-basis: 70%;
+    margin: 161px 153px 152px 109px;
+}
+
+.about__title {
+    margin-bottom: 40px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #E06733;
+}
+
+.about__description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.about__right {
+    margin: 93px 77px 94px 0;
+    width: 53%;
+    background-image: url(../assets/img/houseplant\ 1.png);
+    background-repeat: no-repeat;
+}
+
+/* section service */
+
+.service {
+    background: #EDF2EC;
+}
+
+.service__container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.service__header {
+    display: flex;
+    justify-content: left;
+    padding: 38px 109px 80px;
+    
+}
+
+.service__content {
+    margin: 0 67px 0 109px;
+    padding-bottom: 121px;
+}
+
+.service__title {
+    margin-right: 141px;
+    max-width: 306px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.service__btn {
+    align-self: center;
+    margin-right: 38px;
+    padding: 12px 40px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service__item {
+    margin-right: 115px;
+    margin-bottom: 55px;
+    border-bottom: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.service__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.service__item:nth-child(n+4) {
+    margin-bottom: 0;
+}
+
+.service__item-photo {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service__item-title {
+    margin: 6px auto;
+    margin-bottom: 14px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.service__item-description {
+    margin-bottom: 36px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+}
+
+/* section prices */
+
+.prices {
+    padding: 2px 70px 0 109px;
+    background-color: #FFFFFF;
+}
+
+.prices__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices__title {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.prices__accourdion {
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+
+.prices__description {
+    margin-top: 34px;
+    max-width: 452px;
+    text-align: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.prices__btn {
+    display: block;
+    margin-bottom: 39px;
+    margin-left: auto;
+    width: 162px;
+    height: 50px;
+    text-align: right;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;
+    background-color: inherit;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.prices__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 29px 41px;
+    padding: 16px 40px;
+    width: 250px;
+    background: #EDF2EC;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.prices__item:first-child {
+    margin-top: 34px;
+}
+
+.prices__item:last-child {
+    margin-bottom: 34px;
+}
+
+.prices__item-image {
+    display: block;
+}
+
+.prices__leafs {
+    display: block;
+    margin-bottom: 105px;
+    margin-left: auto;
+    transform: translate(10px, -5px);
+}
+
+/* section contact */
+
+.contact {
+    background: #EDF2EC;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 51px 70px 0 109px;
+    max-width: 1440px;
+}
+
+.contact__image {
+    display: block;
+}
+
+.contact__title {
+    margin-top: 9px;
+    margin-left: 45px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.contact__city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+    padding: 0 35px 0 20px;
+    width: 450px;
+    height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+.contact__city-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+
+color: #717171;
+}
+
+.contact__city-image {
+    display: block;
+}
+
+/* footer */
+
+footer {
+  background-color: #FFFFFF;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 70px 40px 109px;
+}
+
+.footer__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.footer__text:nth-child(1) {
+    margin-right: 67px;
+}
+
+.footer__text:nth-child(2) {
+    margin-right: 48px;
+}
+
+.footer__text-list {
+    display: flex;
+}
+
+.footer__text-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer__list {
+    display: flex;
+    margin-top: 9px;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
