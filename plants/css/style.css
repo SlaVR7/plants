@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    min-width: 1440px;
     margin: 0;
     font-family: "Inika";
-}
+   }
 
 a {
     text-decoration: none;
@@ -26,6 +31,9 @@ p {
     margin: 0;
 }
 
+
+/* header */
+
 header {
     background-color: #EDF2EC;
 }
@@ -44,19 +52,28 @@ header {
 
 .header__nav-link {
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
-    color: #010201;
+    font-weight:inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
 }
 
-.header__nav-link:hover {
+.header__nav-item:hover {
     font-weight: 700;
     color: #E06733;
+    transition-duration: 250ms;
+}
+
+.header__nav-item:nth-child(3):hover {
+    margin-left: 0.7px;
 }
 
 .header__nav-item {
     margin-right: 46px;
+    font-weight: 400;
+    color: #010201;
+    font-size: 16px;
+    line-height: 50px;
 }
 
 .header__nav-first,
@@ -92,10 +109,12 @@ header {
 }
 
 .welcome__leafs {
-    width: 50%;
+    width: 45%;
     background-image: url(../assets/img/leafs.png);
     background-repeat: no-repeat;
-    background-size: 450px 408px;
+    background-size: contain;
+    transform: scale(1.1);
+    background-position: 22px 14px;
 }
 
 .welcome__descriprion {
@@ -140,6 +159,7 @@ h1 {
     color: #FFFFFF;
     background-color: #E06733;
     cursor: pointer;
+    transition-duration: .25s;
 }
 
 /* section about */
@@ -184,6 +204,7 @@ h1 {
     width: 53%;
     background-image: url(../assets/img/houseplant\ 1.png);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* section service */
@@ -236,6 +257,18 @@ h1 {
     color: #E06733;
 }
 
+.service__btn:hover {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
 .service__list {
     display: flex;
     flex-wrap: wrap;
@@ -246,6 +279,10 @@ h1 {
     margin-bottom: 55px;
     border-bottom: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
+}
+
+.service__item:hover {
+    cursor: pointer;
 }
 
 .service__item:nth-child(3n) {
@@ -344,6 +381,16 @@ h1 {
     border-radius: 5px;
 }
 
+.prices__btn:hover {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
 .prices__content {
     display: flex;
     justify-content: space-between;
@@ -363,6 +410,12 @@ h1 {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+}
+
+.prices__item:hover {
+    color: #E06733;
+    cursor: pointer;
+    transition-duration: 250ms;
 }
 
 .prices__item:first-child {
@@ -421,9 +474,16 @@ h1 {
     padding: 0 35px 0 20px;
     width: 450px;
     height: 50px;
+    color:#717171;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
+}
+
+.contact__city:hover {
+    color: #E06733;
+    cursor: pointer;
+    transition-duration: 250ms;
 }
 
 .contact__city-text {
@@ -433,8 +493,7 @@ h1 {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.05em;
-
-color: #717171;
+    color: inherit;
 }
 
 .contact__city-image {
@@ -463,6 +522,26 @@ footer {
     color: #000000;
 }
 
+.footer__link:hover {
+    color: #E06733;
+    transition-duration: 250ms;
+}
+
+.footer__svg:hover {
+    fill: #E06733;
+    transition-duration: 250ms;
+}
+
+.insta:hover path {
+    fill: #E06733;
+    transition-duration: 250ms;
+}
+
+.printerest:hover path {
+    fill: #E06733;
+    transition-duration: 250ms;
+}
+
 .footer__text:nth-child(1) {
     margin-right: 67px;
 }
@@ -487,6 +566,8 @@ footer {
 .footer__item:not(:last-child) {
     margin-right: 20px;
 }
+    
+  
 
 
 
