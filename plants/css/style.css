@@ -76,9 +76,12 @@ header {
     line-height: 50px;
 }
 
-.header__nav-first,
-.header__nav-last {
+.header__nav-first {
     margin-right: 0;
+}
+
+.header__nav-last {
+    margin-right: 40px;
 }
 
 .header__nav-item:first-child {
@@ -118,7 +121,7 @@ header {
 }
 
 .welcome__descriprion {
-    flex-basis: 45%;
+    flex-basis: 46.5%;
 }
 
 h1 {
@@ -176,7 +179,7 @@ h1 {
 }
 
 .about__left {
-    flex-basis: 70%;
+    flex-basis: 64%;
     margin: 161px 153px 152px 109px;
 }
 
@@ -226,7 +229,7 @@ h1 {
 }
 
 .service__content {
-    margin: 0 67px 0 109px;
+    margin: 0 109px;
     padding-bottom: 121px;
 }
 
@@ -323,8 +326,7 @@ h1 {
 /* section prices */
 
 .prices {
-    padding: 2px 70px 0 109px;
-    background-color: #FFFFFF;
+      background-color: #FFFFFF;
 }
 
 .prices__container {
@@ -396,6 +398,14 @@ h1 {
     justify-content: space-between;
 }
 
+.prices__left {
+    margin-left: 109px;
+}
+
+.prices__right {
+    margin-right: 109px;
+}
+
 .prices__item {
     display: flex;
     justify-content: space-between;
@@ -441,18 +451,19 @@ h1 {
 
 .contact {
     background: #EDF2EC;
+    padding-top: 51px;
 }
 
 .contact__container {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 51px 70px 0 109px;
     max-width: 1440px;
 }
 
 .contact__image {
     display: block;
+    margin-left: 109px;
 }
 
 .contact__title {
@@ -471,6 +482,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-top: 96px;
+    margin-right: 109px;
     padding: 0 35px 0 20px;
     width: 450px;
     height: 50px;
@@ -510,10 +522,12 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 40px 70px 40px 109px;
+    padding: 40px 0;
+    max-width: 1440px;
 }
 
 .footer__text {
+    margin-left: 109px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -542,12 +556,8 @@ footer {
     transition-duration: 250ms;
 }
 
-.footer__text:nth-child(1) {
-    margin-right: 67px;
-}
-
 .footer__text:nth-child(2) {
-    margin-right: 48px;
+    margin-right: 88px;
 }
 
 .footer__text-list {
@@ -561,12 +571,13 @@ footer {
 .footer__list {
     display: flex;
     margin-top: 9px;
+    margin-right: 109px;
 }
 
 .footer__item:not(:last-child) {
     margin-right: 20px;
 }
-    
+
   
 
 
