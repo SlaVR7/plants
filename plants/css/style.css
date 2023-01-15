@@ -862,8 +862,15 @@ footer {
 }
 
 @media (max-width: 380px) {
+
+    html,
     body {
-        min-width: 380px;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    body {
+       min-width: 380px;
     }
 
     .bar {
@@ -906,7 +913,7 @@ footer {
         height: 398px;
         background-color: white;
         z-index: 10;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition-duration: .3s;
     }
 
@@ -931,6 +938,7 @@ footer {
     }
 
     .burger__link {
+        display: block;
         color: #499A18;
     }
 
