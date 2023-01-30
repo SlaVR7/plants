@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Plants</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
 </head>
-<body>
+<body id="body">
     <header>
         <div class="header__container">
             <nav>
@@ -52,7 +52,9 @@
             <div class="welcome__descriprion">
                 <h1>We grow <span class="green">plants</span> and give you oxygen</h1>
                 <p class="welcome__par">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br class="welcome__par-string"> industry's standard dummy text ever since the 1500s.</p>
-                <button class="welcome__btn">LEARN MORE</button>
+                <button class="welcome__btn">
+                    <a class="welcome__btn-link" href="#about">LEARN MORE<a>
+                </button>
             </div>
         </div>
     </section>
@@ -71,38 +73,38 @@
         <div class="service__container">
             <div class="service__header">
                 <h2 class="service__title">Service and our projects</h2>
-                <button class="service__btn">Gardens</button>
-                <button class="service__btn">Lawn</button>
-                <button class="service__btn">Planting</button>
+                <button class="service__btn" id="gardensBtn">Gardens</button>
+                <button class="service__btn" id="lawnBtn">Lawn</button>
+                <button class="service__btn" id="plantingBtn">Planting</button>
             </div>
             <div class="service__content">
                 <ul class="service__list">
-                    <li class="service__item">
+                    <li class="service__item gardens">
                         <div class="service__item-photo1"></div>
                         <p class="service__item-title">Garden care</p>
                         <p class="service__item-description">Lorem Ipsum has been the industry</p>
                     </li>
-                    <li class="service__item">
+                    <li class="service__item planting">
                         <div class="service__item-photo2"></div>
                         <p class="service__item-title">Planting</p>
                         <p class="service__item-description">Lorem Ipsum has been the industry</p>
                     </li>
-                    <li class="service__item">
+                    <li class="service__item lawn">
                         <div class="service__item-photo3"></div>
                         <p class="service__item-title">Lawn care</p>
                         <p class="service__item-description">Lorem Ipsum has been the industry</p>
                     </li>
-                    <li class="service__item">
+                    <li class="service__item planting">
                         <div class="service__item-photo4"></div>
                         <p class="service__item-title">Planting</p>
                         <p class="service__item-description">Lorem Ipsum has been the industry</p>
                     </li>
-                    <li class="service__item">
+                    <li class="service__item gardens">
                         <div class="service__item-photo5"></div>
                         <p class="service__item-title">Garden care</p>
                         <p class="service__item-description">Lorem Ipsum has been the industry</p>
                     </li>
-                    <li class="service__item">
+                    <li class="service__item planting">
                         <div class="service__item-photo6"></div>
                         <p class="service__item-title">Planting</p>
                         <p class="service__item-description">Lorem Ipsum has been the industry</p>
@@ -110,29 +112,77 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="prices" id="price">
         <div class="prices__container">
             <div class="prices__left">
                 <h2 class="prices__title">Prices</h2>
+
                 <div class="prices__accourdion">
-                    <div class="prices__item">
+                    <div class="prices__main-item">
+                        <div class="prices__item" id="basics">
                         <div>Basics</div>
-                        <img class="prices__item-image" src="assets/img/accordion_btn.svg" alt="list button">
+                        <img class="prices__item-image" id='basicsArrow' src="assets/img/accordion_btn.svg" alt="list button">
                     </div>
-                    <div class="prices__item">
-                        <div>Standard</div>
-                        <img src="assets/img/accordion_btn.svg" alt="list button">
+
+                    <div class="accordion-body" id="basicsBody">
+                        <div class="prices__item-line"></div>
+                        <p class="prices__par">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <p>
+                            <span class="prices__price">$15</span>
+                            <span class="prices__per-hour">/ per hour</span>
+                        </p>
+                        <div class="prices__order">
+                            <a class="prices__order-link" href="#contacts">Order</a>
+                        </div>
                     </div>
-                    <div class="prices__item">
-                        <div>Pro care</div>
-                        <img src="assets/img/accordion_btn.svg" alt="list button">
-                    </div>
+
                 </div>
+                    <div class="prices__main-item">
+                        <div class="prices__item" id="standard">
+                            <div>Standard</div>
+                            <img class="prices__item-image" id="standardArrow" src="assets/img/accordion_btn.svg" alt="list button">
+                        </div>
+
+                        <div class="accordion-body" id="standardBody">
+                            <div class="prices__item-line"></div>
+                            <p class="prices__par">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p>
+                                <span class="prices__price">$25</span>
+                                <span class="prices__per-hour">/ per hour</span>
+                            </p>
+                            <div class="prices__order">
+                                <a class="prices__order-link" href="#contacts">Order</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="prices__main-item">
+                        <div class="prices__item" id="proCare">
+                            <div>Pro care</div>
+                            <img class="prices__item-image" id="proCareArrow" src="assets/img/accordion_btn.svg" alt="list button">
+                        </div>
+
+                        <div class="accordion-body" id="proCareBody">
+                            <div class="prices__item-line"></div>
+                            <p class="prices__par">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <p>
+                                <span class="prices__price">$35</span>
+                                <span class="prices__per-hour">/ per hour</span>
+                            </p>
+                            <div class="prices__order">
+                                <a class="prices__order-link" href="#contacts">Order</a>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
             </div>
             <div class="prices__right">
                     <h3 class="prices__description">Our best <span class="green">gardeners</span> are ready to help you</h3>
-                    <button class="prices__btn">Contact us</button>
+                    <button class="prices__btn">
+                        <a class="prices__btn-link" href="#contacts">Contact us</a>
+                    </button>
                     <img class="prices__leafs" src="assets/img/prices-leafs.png" alt="leafs">
                 </div>
             </div>
@@ -141,9 +191,47 @@
         <div class="contact__container">
             <img class="contact__image" src="assets/img/contact_woman.png" alt="woman">
             <h2 class="contact__title">Contact us</h2>
-            <div class="contact__city">
-                <div class="contact__city-text">City</div>
-                <img class="contact__city-image" src="assets/img/contact_btn.svg" alt="arrow">
+            <div>
+                <div class="contact__city" id="contactHead">
+                    <div class="contact__city-text" id="city">City</div>
+                    <img class="contact__city-image" id="contactArrowClosed" src="assets/img/contact_btn.svg" alt="arrow">
+                    <img class="contact__image-open" id="contactArrowOpened" src="assets/img/contact-opened.svg" alt="arrow">
+                </div>
+                <div class="contact__list" id="contactBody">
+                    <div class="contact__item" id="canandaigua">
+                        Canandaigua, NY
+                        <div class="contact__line"></div>
+                    </div>
+                    <div class="contact__item" id="NY">
+                        New York City
+                        <div class="contact__line"></div>
+                    </div>
+                    <div class="contact__item" id="yonkers">
+                        Yonkers, NY
+                        <div class="contact__line"></div>
+                    </div>
+                    <div class="contact__item" id="sherrill">
+                        Sherrill, NY
+                        <div class="contact__line" id="sherrill"></div>
+                    </div>
+                </div>
+                <div class="contact__card" id="contactCard">
+                    <ul class="card__title">
+                        <li class="card__title-item">City:</li>
+                        <li class="card__title-item">Phone:</li>
+                        <li class="card__title-item">Office address:</li>
+                    </ul>
+                    <ul class="card__info">
+                        <li class="card__info-item" id="cardCity">Canandaigua, NY</li>
+                        <li class="card__info-item" id="cardTel">+1	585	393 0001</li>
+                        <li class="card__info-item" id="cardAddress">151 Charlotte Street</li>
+                        <li>
+                            <button class="card__info-btn">
+                                <a id="call" href="tel:+15853930001">Call us</a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

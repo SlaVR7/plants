@@ -173,6 +173,10 @@ h1 {
     transition-duration: .25s;
 }
 
+.welcome__btn-link {
+    display: block;
+}
+
 /* section about */
 
 .about {
@@ -266,9 +270,11 @@ h1 {
     font-size: 20px;
     line-height: 26px;
     color: #E06733;
+    cursor: pointer;
 }
 
-.service__btn:hover {
+.service__btn:hover,
+.service__btn-active {
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -290,6 +296,10 @@ h1 {
     margin-bottom: 63px;
     border-bottom: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
+}
+
+.blur {
+    filter: blur(2px);
 }
 
 .service__item:hover {
@@ -394,6 +404,8 @@ h1 {
 }
 
 .prices__accourdion {
+    margin-bottom: 130px;
+    padding: 34px 41px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
 }
@@ -439,6 +451,10 @@ h1 {
     transition-duration: 250ms;
 }
 
+.prices__btn-link {
+    display: block;
+}
+
 .prices__content {
     display: flex;
     justify-content: space-between;
@@ -455,10 +471,9 @@ h1 {
 .prices__item {
     display: flex;
     justify-content: space-between;
-    margin: 29px 41px;
     padding: 16px 40px;
     width: 250px;
-    background: #EDF2EC;
+    background-color: #EDF2EC;
     border-radius: 20px;
     font-family: 'Inter';
     font-style: normal;
@@ -474,21 +489,93 @@ h1 {
     transition-duration: 250ms;
 }
 
-.prices__item:first-child {
-    margin-top: 34px;
+.prices__main-item:not(:last-child) {
+    margin-bottom: 32px;
 }
 
-.prices__item:last-child {
-    margin-bottom: 34px;
+.accordion-body {
+    width: 250px;
+    padding: 0 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #D6E7D2;
+    max-height: 0;
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: 150ms;
 }
 
 .prices__item-image {
     display: block;
+    width: 16px;
+    height: 20px;
+}
+
+.prices__open-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices__image-transform {
+    transform: rotate(180deg);
+}
+
+.prices__item-line {
+    width: 164px;
+    height: 0;
+    margin-bottom: 6px;
+    border-top: 0.5px solid #AEA1A1;
+}
+
+.prices__par {
+    margin-bottom: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+}
+
+.prices__price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.prices__per-hour {
+    margin-bottom: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.prices__order {
+    width: 86px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.prices__order-link {
+    margin: 3px 20px;
+    display: block;
+    height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
 }
 
 .prices__leafs {
     display: block;
-    margin-bottom: 105px;
     margin-left: auto;
     transform: translate(10px, -5px);
 }
@@ -536,6 +623,7 @@ h1 {
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
+    user-select: none;
 }
 
 .contact__city:hover {
@@ -556,6 +644,109 @@ h1 {
 
 .contact__city-image {
     display: block;
+}
+
+.contact__image-open {
+    display: none;
+}
+
+.contact__list {
+    width: 450px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    background: #DCE9D9;
+}
+
+.contact__item {
+    padding: 0 50px 0 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #499A18;
+    user-select: none;
+}
+
+.contact__item:hover {
+    color: #717171;
+    cursor: pointer;
+}
+
+.contact__city:active {
+    background: #C1E698;
+}
+
+.contact__line {
+    width: 380px;
+    height: 0px;
+    border: 1px solid #D9D9D9;
+}
+
+.contact__item:hover .contact__line {
+    border: 1px solid #717171;
+}
+
+.contact__card {
+    width: 448px;
+    margin-top: 47px;
+    padding: 17px 33px 32px;
+    display: flex;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: none;
+}
+
+.card__title {
+    margin-right: 5px;
+}
+
+.card__title-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.card__info-item {
+    margin-bottom: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+
+.card__info-btn {
+    margin-top: 19px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card__info-btn:hover {
+    color: white;
+    background: #E06733;
+}
+
+#call {
+    display: block;
+    padding: 7px 29px;
 }
 
 /* footer */
@@ -833,10 +1024,16 @@ footer {
     }
 
     .contact__city {
-        margin-top: 101px;
-        margin-right: auto;
-        margin-bottom: 246px;
+        margin: 101px auto 246px;
+    }
+
+    .contact__list {
+        margin: 0 auto;
+    }
+
+    .contact__card {
         margin-left: auto;
+        margin-right: auto;
     }
 
     .footer__container {
@@ -1056,20 +1253,29 @@ footer {
 
     .prices__accourdion {
         width: 224px;
-        height: 235px;
         margin: 0 auto;
+        padding: 26px 22px;
     }
 
     .prices__item {
         width: 180px;
-        margin: 11px auto;
+        margin: 0 auto;
         padding-left: 31px;
         font-size: 15px;
         line-height: 20px;
     }
 
-    .prices__item:first-child {
-        margin-top: 28px;
+    .prices__main-item:not(:last-child) {
+        margin-bottom: 11px;
+    }
+
+    .accordion-body {
+        width: 180px;
+        padding-left: 31px;
+    }
+
+    .prices__item-line {
+        width: 105px;
     }
 
     .prices__right {
@@ -1084,12 +1290,22 @@ footer {
         text-align: center;
     }
 
+    .prices__order {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .prices__btn {
         width: 121px;
         height: 35px;
         margin: 0 auto;
         font-size: 15px;
         line-height: 20px;
+    }
+
+    .prices__order-link {
+        margin: 0;
+        padding: 3px 20px;
     }
 
     .prices__leafs {
@@ -1116,6 +1332,22 @@ footer {
         width: 100px;
         height: 125px;
         transform: translateX(0);
+    }
+
+    .contact__city {
+        margin-bottom: 0;
+    }
+
+    .contact__list {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .contact__card {
+        width: 340px;
+        margin-bottom: 30px;
+        padding: 10px 15px;
+        justify-content: space-between;
     }
 
     .footer__container {
