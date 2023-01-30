@@ -271,6 +271,7 @@ h1 {
     line-height: 26px;
     color: #E06733;
     cursor: pointer;
+    transition-duration: .5s;
 }
 
 .service__btn:hover,
@@ -283,7 +284,7 @@ h1 {
     color: #FFFFFF;
     background-color: #E06733;
     cursor: pointer;
-    transition-duration: 250ms;
+    transition-duration: .5s;
 }
 
 .service__list {
@@ -296,10 +297,13 @@ h1 {
     margin-bottom: 63px;
     border-bottom: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
+    filter: blur(0);
+    transition-duration: 1s;
 }
 
 .blur {
     filter: blur(2px);
+    transition-duration: 1s;
 }
 
 .service__item:hover {
