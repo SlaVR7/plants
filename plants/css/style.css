@@ -506,7 +506,7 @@ h1 {
     max-height: 0;
     overflow: hidden;
     transition-property: max-height;
-    transition-duration: 150ms;
+    transition-duration: 50ms;
 }
 
 .prices__item-image {
